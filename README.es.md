@@ -8,14 +8,14 @@
 
 <p align="center"><a href="#start"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/kit/btn-entiende-tu-sesion-outline-sm-dark.svg" /><img src="assets/readme-builder/kit/btn-entiende-tu-sesion-outline-sm-light.svg" alt="Entiende tu sesión" height="34" /></picture></a>&nbsp;
 <a href="#catalog"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/kit/btn-elige-tus-mods-outline-sm-dark.svg" /><img src="assets/readme-builder/kit/btn-elige-tus-mods-outline-sm-light.svg" alt="Elige tus mods" height="34" /></picture></a>&nbsp;
-<a href="#install"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/kit/btn-instala-solo-lo-que-necesitas-outline-sm-dark.svg" /><img src="assets/readme-builder/kit/btn-instala-solo-lo-que-necesitas-outline-sm-light.svg" alt="Instala solo lo que necesitas" height="34" /></picture></a></p>
+<a href="#install"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/kit/btn-instalacion-retirada-y-compatibilidad-outline-sm-dark.svg" /><img src="assets/readme-builder/kit/btn-instalacion-retirada-y-compatibilidad-outline-sm-light.svg" alt="Instalación, retirada y compatibilidad" height="34" /></picture></a></p>
 
 <p align="center"><a href="README.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/kit/btn-english-outline-sm-dark.svg" /><img src="assets/readme-builder/kit/btn-english-outline-sm-light.svg" alt="English" height="34" /></picture></a>&nbsp;
 <a href="README.es.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/kit/btn-espanol-primary-sm-dark.svg" /><img src="assets/readme-builder/kit/btn-espanol-primary-sm-light.svg" alt="Español" height="34" /></picture></a></p>
 
-- **Choose.** Six independently installable mods.
-- **Observe.** Native data. Honest limits. No model calls.
-- **Understand.** Context, cost, quotas, Git and tools.
+- **Elige.** Seis mods que se instalan por separado.
+- **Observa.** Datos nativos. Límites claros. Sin llamadas al modelo.
+- **Entiende.** Contexto, costo, cuotas, Git y herramientas.
 
 <a id="start"></a>
 
@@ -31,28 +31,25 @@ claude --plugin-dir ./mods/session-vitals
 
 Dentro de Claude Code escribe `/vitals`. Verás contexto y coste encima del prompt. Los otros mods añaden información al indicador de trabajo y ofrecen comandos para consultarla en reposo, sin iniciar turnos del modelo.
 
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/diagrams/how-mods-work-es-dark.svg" /><img src="assets/readme/diagrams/how-mods-work-es-light.svg" alt="Cómo llega un mod a tu sesión: agregar el catálogo, instalar un mod, el host manda eventos, el mod muestra una vista compacta y un comando da la vista en pausa" width="100%" /></picture></p>
+
 <p align="center"><img src="assets/readme-builder/kit/wave.svg" alt="" width="100%" /></p>
 
 <a id="catalog"></a>
 
 ## <img src="assets/readme-builder/icons/layers.svg" width="24" height="24" alt="" /> Elige tus mods
 
-| Mod | Command | What you see | Display |
-| --- | --- | --- | --- |
-| [session-vitals](mods/session-vitals) | `/vitals` | Context tokens, window fill, session cost and time since this mod loaded. | Above the prompt |
-| [quota-compass](mods/quota-compass) | `/quota` | Reported account usage windows and their UTC reset timestamps. | Spinner |
-| [git-lens](mods/git-lens) | `/git-lens` | Current branch and changed Git entries, including detached HEAD. | Spinner |
-| [mcp-radar](mods/mcp-radar) | `/radar` | Available MCP tool names; refresh with /radar. | Spinner |
-| [memory-map](mods/memory-map) | `/memory-map` | Character counts of memory sections observed after loading. | Spinner |
-| [tool-pulse](mods/tool-pulse) | `/pulse` | Observed tool calls, active calls, failures and cumulative timing. | Spinner |
+<!-- kit:catalog -->
+<p align="center"><a href="mods/session-vitals"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/kit/catalog-es-01-dark.svg" /><img src="assets/readme-builder/kit/catalog-es-01-light.svg" alt="session-vitals: Tokens de contexto, uso de la ventana, costo de la sesión y tiempo desde que cargó el mod." width="49%" /></picture></a><a href="mods/quota-compass"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/kit/catalog-es-02-dark.svg" /><img src="assets/readme-builder/kit/catalog-es-02-light.svg" alt="quota-compass: Ventanas de uso de la cuenta que reporta el host y su hora de reinicio en UTC." width="49%" /></picture></a><a href="mods/git-lens"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/kit/catalog-es-03-dark.svg" /><img src="assets/readme-builder/kit/catalog-es-03-light.svg" alt="git-lens: Rama actual y entradas de Git con cambios, incluido HEAD separado." width="49%" /></picture></a><a href="mods/mcp-radar"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/kit/catalog-es-04-dark.svg" /><img src="assets/readme-builder/kit/catalog-es-04-light.svg" alt="mcp-radar: Nombres de las herramientas MCP disponibles ahora; se actualiza con /radar." width="49%" /></picture></a><a href="mods/memory-map"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/kit/catalog-es-05-dark.svg" /><img src="assets/readme-builder/kit/catalog-es-05-light.svg" alt="memory-map: Cantidad de caracteres de las secciones de memoria vistas después de cargar." width="49%" /></picture></a><a href="mods/tool-pulse"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/kit/catalog-es-06-dark.svg" /><img src="assets/readme-builder/kit/catalog-es-06-light.svg" alt="tool-pulse: Llamadas a herramientas, las activas, fallos y tiempo acumulado." width="49%" /></picture></a></p>
+<!-- /kit:catalog -->
 
-Cada mod se instala por separado. En terminales estrechas empieza con uno o dos: sus textos se suman al indicador de trabajo.
+En una terminal angosta empieza con uno o dos mods de spinner. Cada uno respeta el texto que ya tiene el spinner; instalarlos todos puede alargar mucho esa línea. Cada comando funciona aunque no instales los demás mods.
 
 <p align="center"><img src="assets/readme-builder/kit/wave.svg" alt="" width="100%" /></p>
 
 <a id="install"></a>
 
-## <img src="assets/readme-builder/icons/download.svg" width="24" height="24" alt="" /> Instala solo lo que necesitas
+## <img src="assets/readme-builder/icons/download.svg" width="24" height="24" alt="" /> Instalación, retirada y compatibilidad
 
 Agrega el catálogo y selecciona los mods que necesites:
 
@@ -63,6 +60,20 @@ Agrega el catálogo y selecciona los mods que necesites:
 ```
 
 Cambia el nombre por otro del catálogo. Usa `/plugin` para desactivar o desinstalar. Respeta las preguntas de confianza y alcance del anfitrión; este proyecto no modifica tu configuración global.
+
+| Anfitrión | Estado |
+| --- | --- |
+| Claude Code 2.1.311, Windows | Validación nativa, pruebas de contrato de eventos y pruebas de comandos ejecutadas |
+| Claude Code 2.1.311, Linux | Validación nativa, pruebas de contrato e integración real con Git pasan en CI |
+| Claude Code 2.1.287+ | Base documentada de la API; versiones anteriores a 2.1.311 sin probar |
+| Claude Code escritorio / VS Code | Depende del componente; el dibujado en vivo no se revisó |
+| Codex, OpenCode | Sin adaptador: no instales estos mods ahí |
+| DeepSeek | Un proveedor de modelos no trae el runtime de mods de Claude Code |
+
+<!-- kit:compat-links -->
+<p align="center"><a href="docs/COMPATIBILITY.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/kit/compat-links-es-01-dark.svg" /><img src="assets/readme-builder/kit/compat-links-es-01-light.svg" alt="Compatibilidad y límites de datos" height="44" /></picture></a>&nbsp;
+<a href="docs/STATUS.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/kit/compat-links-es-02-dark.svg" /><img src="assets/readme-builder/kit/compat-links-es-02-light.svg" alt="Estado" height="34" /></picture></a></p>
+<!-- /kit:compat-links -->
 
 <p align="center"><img src="assets/readme-builder/kit/wave.svg" alt="" width="100%" /></p>
 

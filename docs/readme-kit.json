@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "theme": "aurora",
+  "assets": "assets/readme-builder/kit",
+  "blocks": [
+    {"id": "catalog", "type": "cards", "items": [
+      {"title": "session-vitals", "href": "mods/session-vitals", "icon": "chart", "kicker": {"en": "Above the prompt", "es": "Sobre el prompt"}, "tags": ["/vitals"],
+       "text": {"en": "Context tokens, window fill, session cost and time since this mod loaded.", "es": "Tokens de contexto, uso de la ventana, costo de la sesión y tiempo desde que cargó el mod."}},
+      {"title": "quota-compass", "href": "mods/quota-compass", "icon": "clock", "kicker": "Spinner", "tags": ["/quota"],
+       "text": {"en": "Reported account usage windows and their UTC reset timestamps.", "es": "Ventanas de uso de la cuenta que reporta el host y su hora de reinicio en UTC."}},
+      {"title": "git-lens", "href": "mods/git-lens", "icon": "branch", "kicker": "Spinner", "tags": ["/git-lens"],
+       "text": {"en": "Current branch and changed Git entries, including detached HEAD.", "es": "Rama actual y entradas de Git con cambios, incluido HEAD separado."}},
+      {"title": "mcp-radar", "href": "mods/mcp-radar", "icon": "search", "kicker": "Spinner", "tags": ["/radar"],
+       "text": {"en": "Names of the MCP tools available right now; refresh with /radar.", "es": "Nombres de las herramientas MCP disponibles ahora; se actualiza con /radar."}},
+      {"title": "memory-map", "href": "mods/memory-map", "icon": "database", "kicker": "Spinner", "tags": ["/memory-map"],
+       "text": {"en": "Character counts of the memory sections observed after loading.", "es": "Cantidad de caracteres de las secciones de memoria vistas después de cargar."}},
+      {"title": "tool-pulse", "href": "mods/tool-pulse", "icon": "bolt", "kicker": "Spinner", "tags": ["/pulse"],
+       "text": {"en": "Observed tool calls, active calls, failures and cumulative timing.", "es": "Llamadas a herramientas, las activas, fallos y tiempo acumulado."}}
+    ]},
+    {"id": "compat-links", "type": "buttons", "items": [
+      {"label": {"en": "Compatibility and data limits", "es": "Compatibilidad y límites de datos"}, "href": "docs/COMPATIBILITY.md", "icon": "check", "variant": "primary", "trailing": true},
+      {"label": {"en": "Status", "es": "Estado"}, "href": "docs/STATUS.md", "icon": "layers", "small": true}
+    ]}
+  ]
+}

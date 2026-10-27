@@ -8,7 +8,7 @@
 
 <p align="center"><a href="#start"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/kit/btn-see-your-session-clearly-outline-sm-dark.svg" /><img src="assets/readme-builder/kit/btn-see-your-session-clearly-outline-sm-light.svg" alt="See your session clearly" height="34" /></picture></a>&nbsp;
 <a href="#catalog"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/kit/btn-choose-your-mods-outline-sm-dark.svg" /><img src="assets/readme-builder/kit/btn-choose-your-mods-outline-sm-light.svg" alt="Choose your mods" height="34" /></picture></a>&nbsp;
-<a href="#install"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/kit/btn-install-only-what-you-need-outline-sm-dark.svg" /><img src="assets/readme-builder/kit/btn-install-only-what-you-need-outline-sm-light.svg" alt="Install only what you need" height="34" /></picture></a></p>
+<a href="#install"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/kit/btn-install-remove-and-compatibility-outline-sm-dark.svg" /><img src="assets/readme-builder/kit/btn-install-remove-and-compatibility-outline-sm-light.svg" alt="Install, remove and compatibility" height="34" /></picture></a></p>
 
 <p align="center"><a href="README.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/kit/btn-english-primary-sm-dark.svg" /><img src="assets/readme-builder/kit/btn-english-primary-sm-light.svg" alt="English" height="34" /></picture></a>&nbsp;
 <a href="README.es.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/kit/btn-espanol-outline-sm-dark.svg" /><img src="assets/readme-builder/kit/btn-espanol-outline-sm-light.svg" alt="Español" height="34" /></picture></a></p>
@@ -31,20 +31,17 @@ claude --plugin-dir ./mods/session-vitals
 
 Type `/vitals` inside Claude Code. Context and cost also appear above the prompt. The other mods append compact information to the working spinner and offer a command you can run while idle. They do not create model turns.
 
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/diagrams/how-mods-work-en-dark.svg" /><img src="assets/readme/diagrams/how-mods-work-en-light.svg" alt="How a mod reaches your session: add the marketplace, install one mod, the host sends events, the mod shows a compact display, and a command gives an idle view" width="100%" /></picture></p>
+
 <p align="center"><img src="assets/readme-builder/kit/wave.svg" alt="" width="100%" /></p>
 
 <a id="catalog"></a>
 
 ## <img src="assets/readme-builder/icons/layers.svg" width="24" height="24" alt="" /> Choose your mods
 
-| Mod | Command | What you see | Display |
-| --- | --- | --- | --- |
-| [session-vitals](mods/session-vitals) | `/vitals` | Context tokens, window fill, session cost and time since this mod loaded. | Above the prompt |
-| [quota-compass](mods/quota-compass) | `/quota` | Reported account usage windows and their UTC reset timestamps. | Spinner |
-| [git-lens](mods/git-lens) | `/git-lens` | Current branch and changed Git entries, including detached HEAD. | Spinner |
-| [mcp-radar](mods/mcp-radar) | `/radar` | Available MCP tool names; refresh with /radar. | Spinner |
-| [memory-map](mods/memory-map) | `/memory-map` | Character counts of memory sections observed after loading. | Spinner |
-| [tool-pulse](mods/tool-pulse) | `/pulse` | Observed tool calls, active calls, failures and cumulative timing. | Spinner |
+<!-- kit:catalog -->
+<p align="center"><a href="mods/session-vitals"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/kit/catalog-en-01-dark.svg" /><img src="assets/readme-builder/kit/catalog-en-01-light.svg" alt="session-vitals: Context tokens, window fill, session cost and time since this mod loaded." width="49%" /></picture></a><a href="mods/quota-compass"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/kit/catalog-en-02-dark.svg" /><img src="assets/readme-builder/kit/catalog-en-02-light.svg" alt="quota-compass: Reported account usage windows and their UTC reset timestamps." width="49%" /></picture></a><a href="mods/git-lens"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/kit/catalog-en-03-dark.svg" /><img src="assets/readme-builder/kit/catalog-en-03-light.svg" alt="git-lens: Current branch and changed Git entries, including detached HEAD." width="49%" /></picture></a><a href="mods/mcp-radar"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/kit/catalog-en-04-dark.svg" /><img src="assets/readme-builder/kit/catalog-en-04-light.svg" alt="mcp-radar: Names of the MCP tools available right now; refresh with /radar." width="49%" /></picture></a><a href="mods/memory-map"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/kit/catalog-en-05-dark.svg" /><img src="assets/readme-builder/kit/catalog-en-05-light.svg" alt="memory-map: Character counts of the memory sections observed after loading." width="49%" /></picture></a><a href="mods/tool-pulse"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/kit/catalog-en-06-dark.svg" /><img src="assets/readme-builder/kit/catalog-en-06-light.svg" alt="tool-pulse: Observed tool calls, active calls, failures and cumulative timing." width="49%" /></picture></a></p>
+<!-- /kit:catalog -->
 
 Start with one or two spinner mods on a narrow terminal. Each preserves the existing spinner suffix; installing all of them can make that line long. All commands remain available without installing the other mods.
 
@@ -52,7 +49,7 @@ Start with one or two spinner mods on a narrow terminal. Each preserves the exis
 
 <a id="install"></a>
 
-## <img src="assets/readme-builder/icons/download.svg" width="24" height="24" alt="" /> Install only what you need
+## <img src="assets/readme-builder/icons/download.svg" width="24" height="24" alt="" /> Install, remove and compatibility
 
 Add the marketplace once, then select individual mods:
 
@@ -63,6 +60,20 @@ Add the marketplace once, then select individual mods:
 ```
 
 Repeat the second command with another catalog name. Use `/plugin` to disable or remove a mod. Follow the host's trust and scope prompts. This repository never edits user-wide agent settings for you.
+
+| Host | Status |
+| --- | --- |
+| Claude Code 2.1.311, Windows | Native validation, event contract tests and command probes run |
+| Claude Code 2.1.311, Linux | Native validation, event contract tests and real Git integration pass in CI |
+| Claude Code 2.1.287+ | Documented API baseline; versions older than 2.1.311 not run |
+| Claude Code desktop / VS Code | Depends on the component; live paint not checked |
+| Codex, OpenCode | No adapter: do not install these mods there |
+| DeepSeek | A model provider does not supply the Claude Code mods runtime |
+
+<!-- kit:compat-links -->
+<p align="center"><a href="docs/COMPATIBILITY.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/kit/compat-links-en-01-dark.svg" /><img src="assets/readme-builder/kit/compat-links-en-01-light.svg" alt="Compatibility and data limits" height="44" /></picture></a>&nbsp;
+<a href="docs/STATUS.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/kit/compat-links-en-02-dark.svg" /><img src="assets/readme-builder/kit/compat-links-en-02-light.svg" alt="Status" height="34" /></picture></a></p>
+<!-- /kit:compat-links -->
 
 <p align="center"><img src="assets/readme-builder/kit/wave.svg" alt="" width="100%" /></p>
 

@@ -1,6 +1,7 @@
 {
   "version": 1,
   "name": "agent-mods",
+  "kit": "docs/readme-kit.json",
   "theme": "aurora",
   "motion": "subtle",
   "branding": {
@@ -50,7 +51,7 @@
         },
         {
           "id": "install",
-          "title": "Install only what you need",
+          "title": "Install, remove and compatibility",
           "icon": "download",
           "source": "content/en/install.md",
           "stage": "use"
@@ -75,22 +76,22 @@
       "file": "README.es.md",
       "language": "es",
       "label": "Español",
-      "eyebrow": "NATIVE CLAUDE CODE MODS",
+      "eyebrow": "MODS NATIVOS DE CLAUDE CODE",
       "tagline": "Tu sesión, a la vista.",
       "features": [
         {
-          "title": "Choose",
-          "text": "Six independently installable mods.",
+          "title": "Elige",
+          "text": "Seis mods que se instalan por separado.",
           "icon": "layers"
         },
         {
-          "title": "Observe",
-          "text": "Native data. Honest limits. No model calls.",
+          "title": "Observa",
+          "text": "Datos nativos. Límites claros. Sin llamadas al modelo.",
           "icon": "shield"
         },
         {
-          "title": "Understand",
-          "text": "Context, cost, quotas, Git and tools.",
+          "title": "Entiende",
+          "text": "Contexto, costo, cuotas, Git y herramientas.",
           "icon": "code"
         }
       ],
@@ -111,7 +112,7 @@
         },
         {
           "id": "install",
-          "title": "Instala solo lo que necesitas",
+          "title": "Instalación, retirada y compatibilidad",
           "icon": "download",
           "source": "content/es/install.md",
           "stage": "use"
