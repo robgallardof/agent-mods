@@ -82,7 +82,7 @@ No model requests, paid token-count requests, background polling, analytics, or 
 ```sh
 npm run check
 npm test
-npm run test:git
+npm run test:git\nnpm run test:install
 ```
 
 The native test harness loads the real mod event chain with explicit host fixtures. The Git integration test creates and changes a real temporary repository. [Test status](docs/STATUS.md) records what ran; [research](docs/RESEARCH.md) records community needs and existing alternatives. Read [AGENTS.md](AGENTS.md) before contributing. Commit messages are in English.
@@ -95,7 +95,7 @@ spanish = {
     'catalog': catalog + '\n\nCada mod se instala por separado. En terminales estrechas empieza con uno o dos: sus textos se suman al indicador de trabajo.\n',
     'install': 'Agrega el catálogo y selecciona los mods que necesites:\n\n```text\n/plugin marketplace add robgallardof/agent-mods\n/plugin install session-vitals@agent-mods\n/plugin install quota-compass@agent-mods\n```\n\nCambia el nombre por otro del catálogo. Usa `/plugin` para desactivar o desinstalar. Respeta las preguntas de confianza y alcance del anfitrión; este proyecto no modifica tu configuración global.\n',
     'limits': '**Mods nativos de Claude Code.** Se distribuyen mediante plugins, pero usan funciones dentro del agente y su interfaz nativa. La API documentada requiere 2.1.287+; esta versión se comprueba en Windows con **2.1.311**. Codex y OpenCode no están implementados. DeepSeek es un modelo/proveedor, no un anfitrión compatible con estos mods.\n\nLos datos ausentes aparecen como desconocidos. El coste no es tu factura de suscripción; la fecha de reinicio de cuota no promete tiempo disponible. Herramientas MCP disponibles no equivalen a verificar todas las conexiones. La memoria muestra secciones observadas y sus caracteres, no todos los archivos configurados. Los tiempos de herramientas pueden solaparse.\n\nNo se hacen peticiones al modelo, conteos de tokens de pago, sondeos, telemetría ni lecturas de credenciales. Solo Git Lens ejecuta un proceso: Git de lectura, sin shell y con límite de tiempo. [Compatibilidad y límites](docs/COMPATIBILITY.md).\n',
-    'develop': 'Para desarrollar necesitas Node.js 22+, Git y el CLI oficial de Claude Code. Los mods no necesitan Node.js, dependencias ni compilación para funcionar.\n\n```sh\nnpm run check\nnpm test\nnpm run test:git\n```\n\nLas pruebas nativas cargan la cadena real de eventos con datos explícitos del anfitrión; la prueba de Git usa un repositorio temporal real. Consulta el [estado de pruebas](docs/STATUS.md), la [investigación](docs/RESEARCH.md) y [AGENTS.md](AGENTS.md). Los commits se escriben en inglés.\n\nLa presentación usa [readme-builder](https://github.com/robgallardof/readme-builder), SVG locales y la firma RG.\n'
+    'develop': 'Para desarrollar necesitas Node.js 22+, Git y el CLI oficial de Claude Code. Los mods no necesitan Node.js, dependencias ni compilación para funcionar.\n\n```sh\nnpm run check\nnpm test\nnpm run test:git\nnpm run test:install\n```\n\nLas pruebas nativas cargan la cadena real de eventos con datos explícitos del anfitrión; la prueba de Git usa un repositorio temporal real. Consulta el [estado de pruebas](docs/STATUS.md), la [investigación](docs/RESEARCH.md) y [AGENTS.md](AGENTS.md). Los commits se escriben en inglés.\n\nLa presentación usa [readme-builder](https://github.com/robgallardof/readme-builder), SVG locales y la firma RG.\n'
 }
 for lang, contents in [('en', sections), ('es', spanish)]:
     for key, text in contents.items():

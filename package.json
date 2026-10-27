@@ -7,7 +7,8 @@
   "scripts": {
     "test": "node scripts/test.mjs",
     "check": "node scripts/check.mjs",
-    "test:git": "node --test tests/git-real.test.mjs"
+    "test:git": "node --test tests/git-real.test.mjs",
+    "test:install": "node --test tests/install-real.test.mjs"
   },
   "engines": { "node": ">=22" },
   "license": "MIT"

@@ -21,3 +21,4 @@ jobs:
       - run: npm run check
       - run: npm test
       - run: npm run test:git
+      - run: npm run test:install

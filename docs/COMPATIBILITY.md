@@ -5,6 +5,7 @@ These packages implement the [official native Mods API](https://code.claude.com/
 | Host | Status |
 | --- | --- |
 | Claude Code 2.1.311 on Windows | Native validation, event contract tests and command probes executed |
+| Claude Code 2.1.311 on Linux | Native validation, event contract tests and real Git integration passed in CI |
 | Claude Code 2.1.287+ | Documented API baseline; older versions than 2.1.311 NOT EXECUTED |
 | Claude Code desktop / VS Code surfaces | Native UI availability depends on component; live paint NOT EXECUTED |
 | Codex | No adapter implemented; do not install these as Codex plugins |
@@ -26,6 +27,6 @@ No mod calls the model, sends prompts, changes permissions, reads settings/authe
 
 ## Tests and source review
 
-The official `claude plugin test` harness loads the actual hooks. Tests explicitly supply host answers for usage, clocks and process output: those tests validate contracts, not real account usage. The separate Node integration test uses a real temporary Git repository. Noninteractive native command probes verify actual mod loading without requesting model inference. Neither replaces visual review in a live terminal.
+The official `claude plugin test` harness loads the actual hooks. Tests explicitly supply host answers for usage, clocks and process output: those tests validate contracts, not real account usage. Separate Node integration tests use a real temporary Git repository and the actual native marketplace installer. Installation checks select one mod and remove it inside a disposable project with isolated host configuration. Noninteractive native command probes verify actual mod loading without requesting model inference. These checks do not replace visual review in a live terminal.
 
 Validation is not approval by Anthropic's plugin directory. Marketplace publication here is a Git repository catalog; no directory submission is claimed. An organization can block mods with managed policy; follow the host's normal approval process.

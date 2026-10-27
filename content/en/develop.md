@@ -4,6 +4,7 @@ Requires Node.js 22+, Git, and the official Claude Code CLI. Mods themselves nee
 npm run check
 npm test
 npm run test:git
+npm run test:install
 ```
 
 The native test harness loads the real mod event chain with explicit host fixtures. The Git integration test creates and changes a real temporary repository. [Test status](docs/STATUS.md) records what ran; [research](docs/RESEARCH.md) records community needs and existing alternatives. Read [AGENTS.md](AGENTS.md) before contributing. Commit messages are in English.

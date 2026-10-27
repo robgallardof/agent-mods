@@ -4,6 +4,7 @@ Para desarrollar necesitas Node.js 22+, Git y el CLI oficial de Claude Code. Los
 npm run check
 npm test
 npm run test:git
+npm run test:install
 ```
 
 Las pruebas nativas cargan la cadena real de eventos con datos explícitos del anfitrión; la prueba de Git usa un repositorio temporal real. Consulta el [estado de pruebas](docs/STATUS.md), la [investigación](docs/RESEARCH.md) y [AGENTS.md](AGENTS.md). Los commits se escriben en inglés.
