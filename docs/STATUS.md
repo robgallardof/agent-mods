@@ -28,7 +28,7 @@ Native validation reports a nonblocking missing listing icon advisory. These are
 
 [Run 40454399178](https://github.com/robgallardof/agent-mods/actions/runs/40454399178) passed on Windows and Linux for commit `09c56aa`. Both jobs ran native validation, 19 native tests and the real Git integration test. The initial Windows run exposed an npm shim lookup issue; the scripts now resolve the native executable directly without a shell.
 
-The isolated installation integration test was added after that run; its local execution passed. Hosted results for that new check must be verified separately.
+[Run 40454511058](https://github.com/robgallardof/agent-mods/actions/runs/40454511058) also passed on Windows and Linux for commit `a2e9f94`, including the new isolated installation/uninstallation integration test: **19 native tests plus 2 real integration tests per operating system**. All validation and test steps passed in both jobs.
 
 ## NOT EXECUTED
 
