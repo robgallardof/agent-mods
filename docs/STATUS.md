@@ -1,5 +1,13 @@
 # Release status
 
+## English commit policy — 2026-10-27
+
+- Repository instructions now explicitly cover English subjects and bodies for all new commits,
+  including merge and squash messages. Claude imports the shared instructions from `AGENTS.md`.
+- EXECUTED: `npm run check`, `npm test` (19 native tests), `npm run test:git` and
+  `npm run test:install` (2 real integration tests): all PASS.
+- No runtime or UI changes. New live account/model probes and visual paint checks: NOT EXECUTED.
+
 2026-10-26 — initial native mod catalog, version 0.1.0.
 
 ## Shipped

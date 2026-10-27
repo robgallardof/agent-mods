@@ -10,3 +10,10 @@ These are native Claude Code mods. The plugin marketplace is their distribution 
 - Run `npm run check`, `npm test`, `npm run test:git`, and `npm run test:install`. Native host fixtures verify contracts; they do not prove live account data, connected MCP transport health, or visual rendering in a real terminal. Installer tests must use isolated host configuration and a disposable workspace.
 - Keep test evidence in `docs/STATUS.md`. Unrun checks are `NOT EXECUTED`.
 - All commits must be in English. No co-author trailers.
+
+## Commit language
+
+All new Git commit subjects and bodies must be written in English, including merge
+and squash messages. Keep the repository's existing message conventions.
+This applies to all contributors and coding agents, and only to new commits.
+Do not rewrite existing history to translate commit messages.
