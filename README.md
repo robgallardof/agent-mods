@@ -6,9 +6,12 @@
 
 <p align="center"><strong>Your session, in view.</strong></p>
 
-<p align="center"><a href="#start">See your session clearly</a> · <a href="#catalog">Choose your mods</a> · <a href="#install">Install only what you need</a></p>
+<p align="center"><a href="#start"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/kit/btn-see-your-session-clearly-outline-sm-dark.svg" /><img src="assets/readme-builder/kit/btn-see-your-session-clearly-outline-sm-light.svg" alt="See your session clearly" height="34" /></picture></a>&nbsp;
+<a href="#catalog"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/kit/btn-choose-your-mods-outline-sm-dark.svg" /><img src="assets/readme-builder/kit/btn-choose-your-mods-outline-sm-light.svg" alt="Choose your mods" height="34" /></picture></a>&nbsp;
+<a href="#install"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/kit/btn-install-only-what-you-need-outline-sm-dark.svg" /><img src="assets/readme-builder/kit/btn-install-only-what-you-need-outline-sm-light.svg" alt="Install only what you need" height="34" /></picture></a></p>
 
-<p align="center"><a href="README.md">English</a> · <a href="README.es.md">Español</a></p>
+<p align="center"><a href="README.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/kit/btn-english-primary-sm-dark.svg" /><img src="assets/readme-builder/kit/btn-english-primary-sm-light.svg" alt="English" height="34" /></picture></a>&nbsp;
+<a href="README.es.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/kit/btn-espanol-outline-sm-dark.svg" /><img src="assets/readme-builder/kit/btn-espanol-outline-sm-light.svg" alt="Español" height="34" /></picture></a></p>
 
 - **Choose.** Six independently installable mods.
 - **Observe.** Native data. Honest limits. No model calls.
@@ -28,6 +31,8 @@ claude --plugin-dir ./mods/session-vitals
 
 Type `/vitals` inside Claude Code. Context and cost also appear above the prompt. The other mods append compact information to the working spinner and offer a command you can run while idle. They do not create model turns.
 
+<p align="center"><img src="assets/readme-builder/kit/wave.svg" alt="" width="100%" /></p>
+
 <a id="catalog"></a>
 
 ## <img src="assets/readme-builder/icons/layers.svg" width="24" height="24" alt="" /> Choose your mods
@@ -43,6 +48,8 @@ Type `/vitals` inside Claude Code. Context and cost also appear above the prompt
 
 Start with one or two spinner mods on a narrow terminal. Each preserves the existing spinner suffix; installing all of them can make that line long. All commands remain available without installing the other mods.
 
+<p align="center"><img src="assets/readme-builder/kit/wave.svg" alt="" width="100%" /></p>
+
 <a id="install"></a>
 
 ## <img src="assets/readme-builder/icons/download.svg" width="24" height="24" alt="" /> Install only what you need
@@ -57,6 +64,8 @@ Add the marketplace once, then select individual mods:
 
 Repeat the second command with another catalog name. Use `/plugin` to disable or remove a mod. Follow the host's trust and scope prompts. This repository never edits user-wide agent settings for you.
 
+<p align="center"><img src="assets/readme-builder/kit/wave.svg" alt="" width="100%" /></p>
+
 <a id="limits"></a>
 
 ## <img src="assets/readme-builder/icons/shield.svg" width="24" height="24" alt="" /> Know what the numbers mean
@@ -68,6 +77,8 @@ Claude Code 2.1.287+ is the documented API baseline. This release is validated o
 Costs come from the host ledger and do not represent your subscription invoice. Quotas may be absent and their reset time is not a work-time guarantee. MCP tool availability does not certify every server's transport health. Memory counts describe observed prompt sections, not every configured file or stored memory. Tool timings can overlap.
 
 No model requests, paid token-count requests, background polling, analytics, or secret/configuration reads. Only Git Lens starts a process: a bounded, read-only `git status` without a shell. See [compatibility and data boundaries](docs/COMPATIBILITY.md).
+
+<p align="center"><img src="assets/readme-builder/kit/wave.svg" alt="" width="100%" /></p>
 
 <a id="develop"></a>
 
@@ -86,7 +97,7 @@ The native test harness loads the real mod event chain with explicit host fixtur
 
 READMEs use [readme-builder](https://github.com/robgallardof/readme-builder), local SVG assets and the shared RG signature. Rebuild with `python scripts/prepare-docs.py` followed by `readme-builder build readme.json --output .`.
 
-<p align="center"><a href="#top">Back to top</a></p>
+<p align="center"><a href="#top"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/kit/btn-back-to-top-outline-sm-dark.svg" /><img src="assets/readme-builder/kit/btn-back-to-top-outline-sm-light.svg" alt="Back to top" height="34" /></picture></a></p>
 
 <!-- readme-builder:signature:start -->
 <p align="center"><a href="https://github.com/robgallardof"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/en/footer-dark.svg" /><img src="assets/readme-builder/en/footer-light.svg" alt="agent-mods" width="100%" /></picture></a></p>

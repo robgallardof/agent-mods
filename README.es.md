@@ -6,9 +6,12 @@
 
 <p align="center"><strong>Tu sesión, a la vista.</strong></p>
 
-<p align="center"><a href="#start">Entiende tu sesión</a> · <a href="#catalog">Elige tus mods</a> · <a href="#install">Instala solo lo que necesitas</a></p>
+<p align="center"><a href="#start"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/kit/btn-entiende-tu-sesion-outline-sm-dark.svg" /><img src="assets/readme-builder/kit/btn-entiende-tu-sesion-outline-sm-light.svg" alt="Entiende tu sesión" height="34" /></picture></a>&nbsp;
+<a href="#catalog"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/kit/btn-elige-tus-mods-outline-sm-dark.svg" /><img src="assets/readme-builder/kit/btn-elige-tus-mods-outline-sm-light.svg" alt="Elige tus mods" height="34" /></picture></a>&nbsp;
+<a href="#install"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/kit/btn-instala-solo-lo-que-necesitas-outline-sm-dark.svg" /><img src="assets/readme-builder/kit/btn-instala-solo-lo-que-necesitas-outline-sm-light.svg" alt="Instala solo lo que necesitas" height="34" /></picture></a></p>
 
-<p align="center"><a href="README.md">English</a> · <a href="README.es.md">Español</a></p>
+<p align="center"><a href="README.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/kit/btn-english-outline-sm-dark.svg" /><img src="assets/readme-builder/kit/btn-english-outline-sm-light.svg" alt="English" height="34" /></picture></a>&nbsp;
+<a href="README.es.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/kit/btn-espanol-primary-sm-dark.svg" /><img src="assets/readme-builder/kit/btn-espanol-primary-sm-light.svg" alt="Español" height="34" /></picture></a></p>
 
 - **Choose.** Six independently installable mods.
 - **Observe.** Native data. Honest limits. No model calls.
@@ -28,6 +31,8 @@ claude --plugin-dir ./mods/session-vitals
 
 Dentro de Claude Code escribe `/vitals`. Verás contexto y coste encima del prompt. Los otros mods añaden información al indicador de trabajo y ofrecen comandos para consultarla en reposo, sin iniciar turnos del modelo.
 
+<p align="center"><img src="assets/readme-builder/kit/wave.svg" alt="" width="100%" /></p>
+
 <a id="catalog"></a>
 
 ## <img src="assets/readme-builder/icons/layers.svg" width="24" height="24" alt="" /> Elige tus mods
@@ -43,6 +48,8 @@ Dentro de Claude Code escribe `/vitals`. Verás contexto y coste encima del prom
 
 Cada mod se instala por separado. En terminales estrechas empieza con uno o dos: sus textos se suman al indicador de trabajo.
 
+<p align="center"><img src="assets/readme-builder/kit/wave.svg" alt="" width="100%" /></p>
+
 <a id="install"></a>
 
 ## <img src="assets/readme-builder/icons/download.svg" width="24" height="24" alt="" /> Instala solo lo que necesitas
@@ -57,6 +64,8 @@ Agrega el catálogo y selecciona los mods que necesites:
 
 Cambia el nombre por otro del catálogo. Usa `/plugin` para desactivar o desinstalar. Respeta las preguntas de confianza y alcance del anfitrión; este proyecto no modifica tu configuración global.
 
+<p align="center"><img src="assets/readme-builder/kit/wave.svg" alt="" width="100%" /></p>
+
 <a id="limits"></a>
 
 ## <img src="assets/readme-builder/icons/shield.svg" width="24" height="24" alt="" /> Qué significan los datos
@@ -66,6 +75,8 @@ Cambia el nombre por otro del catálogo. Usa `/plugin` para desactivar o desinst
 Los datos ausentes aparecen como desconocidos. El coste no es tu factura de suscripción; la fecha de reinicio de cuota no promete tiempo disponible. Herramientas MCP disponibles no equivalen a verificar todas las conexiones. La memoria muestra secciones observadas y sus caracteres, no todos los archivos configurados. Los tiempos de herramientas pueden solaparse.
 
 No se hacen peticiones al modelo, conteos de tokens de pago, sondeos, telemetría ni lecturas de credenciales. Solo Git Lens ejecuta un proceso: Git de lectura, sin shell y con límite de tiempo. [Compatibilidad y límites](docs/COMPATIBILITY.md).
+
+<p align="center"><img src="assets/readme-builder/kit/wave.svg" alt="" width="100%" /></p>
 
 <a id="develop"></a>
 
@@ -84,7 +95,7 @@ Las pruebas nativas cargan la cadena real de eventos con datos explícitos del a
 
 La presentación usa [readme-builder](https://github.com/robgallardof/readme-builder), SVG locales y la firma RG.
 
-<p align="center"><a href="#top">Volver al inicio</a></p>
+<p align="center"><a href="#top"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/kit/btn-volver-al-inicio-outline-sm-dark.svg" /><img src="assets/readme-builder/kit/btn-volver-al-inicio-outline-sm-light.svg" alt="Volver al inicio" height="34" /></picture></a></p>
 
 <!-- readme-builder:signature:start -->
 <p align="center"><a href="https://github.com/robgallardof"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/es/footer-dark.svg" /><img src="assets/readme-builder/es/footer-light.svg" alt="agent-mods" width="100%" /></picture></a></p>
