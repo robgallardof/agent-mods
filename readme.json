@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "name": "agent-mods",
+  "theme": "aurora",
+  "motion": "subtle",
+  "branding": {
+    "author": "Roberto Gallardo",
+    "logo": "assets/brand/rg-logo.jpg",
+    "profile": "https://github.com/robgallardof"
+  },
+  "diagram_preference": "archify",
+  "documents": [
+    {
+      "file": "README.md",
+      "language": "en",
+      "label": "English",
+      "eyebrow": "NATIVE CLAUDE CODE MODS",
+      "tagline": "Your session, in view.",
+      "features": [
+        {
+          "title": "Choose",
+          "text": "Six independently installable mods.",
+          "icon": "layers"
+        },
+        {
+          "title": "Observe",
+          "text": "Native data. Honest limits. No model calls.",
+          "icon": "shield"
+        },
+        {
+          "title": "Understand",
+          "text": "Context, cost, quotas, Git and tools.",
+          "icon": "code"
+        }
+      ],
+      "sections": [
+        {
+          "id": "start",
+          "title": "See your session clearly",
+          "icon": "rocket",
+          "source": "content/en/start.md",
+          "stage": "start"
+        },
+        {
+          "id": "catalog",
+          "title": "Choose your mods",
+          "icon": "layers",
+          "source": "content/en/catalog.md",
+          "stage": "use"
+        },
+        {
+          "id": "install",
+          "title": "Install only what you need",
+          "icon": "download",
+          "source": "content/en/install.md",
+          "stage": "use"
+        },
+        {
+          "id": "limits",
+          "title": "Know what the numbers mean",
+          "icon": "shield",
+          "source": "content/en/limits.md",
+          "stage": "advanced"
+        },
+        {
+          "id": "develop",
+          "title": "Build and verify",
+          "icon": "code",
+          "source": "content/en/develop.md",
+          "stage": "contribute"
+        }
+      ]
+    },
+    {
+      "file": "README.es.md",
+      "language": "es",
+      "label": "Español",
+      "eyebrow": "NATIVE CLAUDE CODE MODS",
+      "tagline": "Tu sesión, a la vista.",
+      "features": [
+        {
+          "title": "Choose",
+          "text": "Six independently installable mods.",
+          "icon": "layers"
+        },
+        {
+          "title": "Observe",
+          "text": "Native data. Honest limits. No model calls.",
+          "icon": "shield"
+        },
+        {
+          "title": "Understand",
+          "text": "Context, cost, quotas, Git and tools.",
+          "icon": "code"
+        }
+      ],
+      "sections": [
+        {
+          "id": "start",
+          "title": "Entiende tu sesión",
+          "icon": "rocket",
+          "source": "content/es/start.md",
+          "stage": "start"
+        },
+        {
+          "id": "catalog",
+          "title": "Elige tus mods",
+          "icon": "layers",
+          "source": "content/es/catalog.md",
+          "stage": "use"
+        },
+        {
+          "id": "install",
+          "title": "Instala solo lo que necesitas",
+          "icon": "download",
+          "source": "content/es/install.md",
+          "stage": "use"
+        },
+        {
+          "id": "limits",
+          "title": "Qué significan los datos",
+          "icon": "shield",
+          "source": "content/es/limits.md",
+          "stage": "advanced"
+        },
+        {
+          "id": "develop",
+          "title": "Desarrolla y comprueba",
+          "icon": "code",
+          "source": "content/es/develop.md",
+          "stage": "contribute"
+        }
+      ]
+    }
+  ]
+}

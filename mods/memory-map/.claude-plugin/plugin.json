@@ -1,0 +1,10 @@
+{
+  "license": "MIT",
+  "author": {
+    "name": "Roberto Gallardo",
+    "url": "https://github.com/robgallardof"
+  },
+  "version": "0.1.0",
+  "name": "memory-map",
+  "description": "Observed memory section metadata"
+}

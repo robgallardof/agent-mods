@@ -1,0 +1,44 @@
+{
+  "name": "agent-mods",
+  "owner": {
+    "name": "Roberto Gallardo"
+  },
+  "plugins": [
+    {
+      "name": "session-vitals",
+      "source": "./mods/session-vitals",
+      "description": "Context tokens, window fill, session cost and time since this mod loaded.",
+      "version": "0.1.0"
+    },
+    {
+      "name": "quota-compass",
+      "source": "./mods/quota-compass",
+      "description": "Reported account usage windows and their UTC reset timestamps.",
+      "version": "0.1.0"
+    },
+    {
+      "name": "git-lens",
+      "source": "./mods/git-lens",
+      "description": "Current branch and changed Git entries, including detached HEAD.",
+      "version": "0.1.0"
+    },
+    {
+      "name": "mcp-radar",
+      "source": "./mods/mcp-radar",
+      "description": "Available MCP tool names; refresh with /radar.",
+      "version": "0.1.0"
+    },
+    {
+      "name": "memory-map",
+      "source": "./mods/memory-map",
+      "description": "Character counts of memory sections observed after loading.",
+      "version": "0.1.0"
+    },
+    {
+      "name": "tool-pulse",
+      "source": "./mods/tool-pulse",
+      "description": "Observed tool calls, active calls, failures and cumulative timing.",
+      "version": "0.1.0"
+    }
+  ]
+}

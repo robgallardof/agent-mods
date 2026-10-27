@@ -1,0 +1,7 @@
+{
+  "name": "session-vitals",
+  "version": "0.1.0",
+  "description": "Native session tokens, context and cost, without model calls",
+  "author": { "name": "Roberto Gallardo", "url": "https://github.com/robgallardof" },
+  "license": "MIT"
+}

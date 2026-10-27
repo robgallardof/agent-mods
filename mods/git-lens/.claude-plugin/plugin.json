@@ -1,0 +1,10 @@
+{
+  "license": "MIT",
+  "author": {
+    "name": "Roberto Gallardo",
+    "url": "https://github.com/robgallardof"
+  },
+  "version": "0.1.0",
+  "name": "git-lens",
+  "description": "Current branch and read-only Git status"
+}

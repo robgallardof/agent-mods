@@ -1,0 +1,14 @@
+{
+  "name": "agent-mods",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Independently installable native Claude Code observability mods",
+  "scripts": {
+    "test": "node scripts/test.mjs",
+    "check": "node scripts/check.mjs",
+    "test:git": "node --test tests/git-real.test.mjs"
+  },
+  "engines": { "node": ">=22" },
+  "license": "MIT"
+}
